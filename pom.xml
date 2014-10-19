@@ -14,6 +14,19 @@
         <module.main.class>us.sroysf.AppMain</module.main.class>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>aws-release</id>
+            <name>AWS Release Repository</name>
+            <url>s3://${repo.bucket.name}/snapshot</url>
+        </repository>
+        <repository>
+            <id>aws-release</id>
+            <name>AWS Release Repository</name>
+            <url>s3://${repo.bucket.name}/release</url>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <repository>
             <id>aws-release</id>
